@@ -6,6 +6,7 @@
 
 public abstract with sharing class TemplateClass {
 
+    // some algorithm that is overall for many classes
     public void runTemplateMethod() {
         this.baseOperation1();
         this.requiredOperation1();
