@@ -20,9 +20,14 @@ public with sharing class CommandExample {
 
     /*
     Result:
+        UserInvoker: switchOn command was launched
         TurnOnCommand: The simple turn On command was called and computer turned On
+
+        UserInvoker: reboot command was launched
         ComputerReceiver: Computer is rebooted!!!
         RebootCommand: Some after reboot actions...
+
+        UserInvoker: switchOff command was launched
         ComputerReceiver: Computer is turned Off
         TurnOffCommand: Some after turn Off actions...
      */

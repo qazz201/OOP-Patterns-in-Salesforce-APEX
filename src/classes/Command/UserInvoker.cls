@@ -16,14 +16,17 @@ public with sharing class UserInvoker {
     }
 
     public void switchOn() {
+        System.debug('UserInvoker: switchOn command was launched');
         this.computerTurnOn.execute();
     }
 
     public void switchOff() {
+        System.debug('UserInvoker: switchOff command was launched');
         this.computerTurnOff.execute();
     }
 
     public void reboot() {
+        System.debug('UserInvoker: reboot command was launched');
         this.computerReboot.execute();
     }
 }
