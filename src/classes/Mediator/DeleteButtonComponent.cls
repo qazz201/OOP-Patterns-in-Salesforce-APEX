@@ -9,6 +9,7 @@ public with sharing class DeleteButtonComponent implements ComponentI {
         this.mediator = mediator;
     }
 
+    // Notify Mediator about DELETE action
     public void deleteMethod() {
         System.debug('DeleteButtonComponent: delete action was redirected to Mediator');
         this.mediator.deleteAction('delete');

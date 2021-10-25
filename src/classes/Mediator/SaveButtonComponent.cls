@@ -9,6 +9,7 @@ public with sharing class SaveButtonComponent implements ComponentI {
         this.mediator = mediator;
     }
 
+    // Notify Mediator about SAVE action
     public void saveMethod() {
         System.debug('SaveButtonComponent: save action was redirected to Mediator');
         this.mediator.saveAction('save');

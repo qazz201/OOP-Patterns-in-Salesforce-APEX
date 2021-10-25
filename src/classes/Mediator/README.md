@@ -75,6 +75,7 @@ public with sharing class SaveButtonComponent implements ComponentI {
         this.mediator = mediator;
     }
 
+    // Notify Mediator about SAVE action
     public void saveMethod() {
         System.debug('SaveButtonComponent: save action was redirected to Mediator');
         this.mediator.saveAction('save');
@@ -96,7 +97,8 @@ public with sharing class UpdateButtonComponent implements ComponentI {
     public void setMediator(Mediator mediator) {
         this.mediator = mediator;
     }
-
+    
+    // Notify Mediator about UPDATE action
     public void updateMethod() {
         System.debug('UpdateButtonComponent: update action was redirected to Mediator');
         this.mediator.updateAction('update');
@@ -120,6 +122,7 @@ public with sharing class DeleteButtonComponent implements ComponentI {
         this.mediator = mediator;
     }
 
+    // Notify Mediator about DELETE action
     public void deleteMethod() {
         System.debug('DeleteButtonComponent: delete action was redirected to Mediator');
         this.mediator.deleteAction('delete');

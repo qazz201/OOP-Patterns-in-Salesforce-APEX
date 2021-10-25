@@ -9,6 +9,7 @@ public with sharing class UpdateButtonComponent implements ComponentI {
         this.mediator = mediator;
     }
 
+    // Notify Mediator about UPDATE action
     public void updateMethod() {
         System.debug('UpdateButtonComponent: update action was redirected to Mediator');
         this.mediator.updateAction('update');
