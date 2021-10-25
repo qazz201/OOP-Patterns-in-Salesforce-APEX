@@ -1,7 +1,7 @@
 /**
  * Created by Vlad K. on 22.10.2021.
- * @description Invoker class is connected with some commands. It sends request to the command.
- * The Invoker dont know nothing about Receiver. And Invoker call methods from Receiver indirectly
+ * @description The invoker class is connected with some commands. It sends a request to the command.
+ * The Invoker knows nothing about the Receiver. And Invoker call methods from Receiver indirectly
  */
 
 public with sharing class UserInvoker {

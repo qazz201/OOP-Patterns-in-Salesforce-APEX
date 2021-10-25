@@ -1,7 +1,7 @@
 /**
  * Created by Vlad K. on 22.10.2021.
- * @description The class that can execute some business logic
- * The Invoker dont know nothing about Receiver
+ * @description The class that can execute some business logic.
+ * The Invoker doesn't know anything about the Receiver.
  * And Invoker call methods from Receiver indirectly
  */
 
