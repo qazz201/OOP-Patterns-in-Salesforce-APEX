@@ -28,17 +28,23 @@ public with sharing class EditorMediator implements Mediator {
     public void saveAction(String actionName) {
         System.debug('EditorMediator: The mediator was notified about \'SAVE\' action. The action name is: ' + actionName);
 
+        // Do something interesting
+
         this.saveButton.setTitle('SAVE button title was changed from Mediator');
     }
 
     public void deleteAction(String actionName) {
         System.debug('EditorMediator: The mediator was notified about \'DELETE\' action. The action name is: ' + actionName);
 
+        // Do something interesting
+
         this.deleteButton.setTitle('DELETE button title was changed from Mediator');
     }
 
     public void updateAction(String actionName) {
         System.debug('EditorMediator: The mediator was notified about \'UPDATE\' action. The action name is: ' + actionName);
+
+        // Do something interesting
 
         this.updateButton.setTitle('UPDATE button title was changed from Mediator');
     }
