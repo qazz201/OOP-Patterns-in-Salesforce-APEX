@@ -1,5 +1,7 @@
 /**
- * Created by vladyslavkravcuk on 01.11.2021.
+ * Created by Vlad K. on 01.11.2021.
+ * @description All specific handlers either handle requests
+  * or send them to another handler in the chain
  */
 
 public with sharing class DogHandler extends AbstractHandler {

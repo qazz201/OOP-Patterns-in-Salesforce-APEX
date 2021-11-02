@@ -1,5 +1,6 @@
 /**
- * Created by vladyslavkravcuk on 01.11.2021.
+ * Created by Vlad K. on 01.11.2021.
+ * @description The realization of chain handler
  */
 
 public abstract with sharing class AbstractHandler implements ChainHandlerI {
@@ -14,6 +15,8 @@ public abstract with sharing class AbstractHandler implements ChainHandlerI {
     public ChainHandlerI linkWith(ChainHandlerI nextHandler) {
         this.nextHandler = nextHandler;
 
+        // It will help to link all handlers in this way:
+        // dogHandler.linkWith(catHandler).linkWith(MouseHandler);
         return nextHandler;
     }
 }
