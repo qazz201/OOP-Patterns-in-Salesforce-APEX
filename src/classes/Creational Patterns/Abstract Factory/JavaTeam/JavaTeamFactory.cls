@@ -1,5 +1,6 @@
 /**
  * Created by Vlad K.  on 04.11.2021.
+ * @description The specific factory that knows only about Java team members
  */
 
 public with sharing class JavaTeamFactory implements ITeamFactory{
