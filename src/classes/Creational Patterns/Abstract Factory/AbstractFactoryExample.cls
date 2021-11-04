@@ -3,8 +3,8 @@
  */
 
 public with sharing class AbstractFactoryExample {
-    public void run() {
-        ITeamFactory factory = new ConcreteTeamFactory();
+    public void run(String speciality) {
+        ITeamFactory factory = this.getFactoryBySpeciality(speciality);
 
         IDeveloper developer = factory.getDeveloper();
         ITester tester = factory.getTester();
@@ -13,5 +13,20 @@ public with sharing class AbstractFactoryExample {
         developer.writeCode();
         tester.testCode();
         projectManager.manageProject();
+    }
+
+    public ITeamFactory getFactoryBySpeciality(String speciality) {
+        ITeamFactory factory;
+
+        switch on speciality {
+            when 'Salesforce' {
+                factory = new SalesforceTeamFactory();
+            }
+            when 'Java' {
+                factory = new JavaTeamFactory();
+            }
+        }
+
+        return factory;
     }
 }
