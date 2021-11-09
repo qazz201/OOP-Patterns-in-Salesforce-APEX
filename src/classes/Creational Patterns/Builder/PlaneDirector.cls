@@ -1,5 +1,7 @@
 /**
- * Created by vladyslavkravcuk on 09.11.2021.
+ * Created by Vlad K. on 09.11.2021.
+ * @description Director knows in which sequence the builder should work.
+  * He works with builders via Builder interface and can nothing know about what type of product is currently built
  */
 
 public with sharing class PlaneDirector {

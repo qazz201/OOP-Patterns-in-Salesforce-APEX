@@ -1,5 +1,6 @@
 /**
- * Created by  on .
+ * Created by  Vlad K.
+ * @description Engine- this is a part of Plane that has its params
  */
 
 public with sharing class Engine {

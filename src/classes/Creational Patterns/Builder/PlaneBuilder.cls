@@ -1,6 +1,7 @@
 
 /**
  * Created by Vlad K. on 08.11.2021.
+ * @description The specific builders implement steps from Builder interface
  */
 
 public with sharing class PlaneBuilder implements Builder {

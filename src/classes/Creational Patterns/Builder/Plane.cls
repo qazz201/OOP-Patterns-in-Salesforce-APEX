@@ -1,5 +1,6 @@
 /**
- * Created by  on .
+ * Created by Vlad K.
+ * @description Plane - this is a class of some product
  */
 
 public with sharing class Plane {
