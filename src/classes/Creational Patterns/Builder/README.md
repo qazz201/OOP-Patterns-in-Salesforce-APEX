@@ -41,7 +41,7 @@ public with sharing class PlaneBuilder implements Builder {
 }
 ```
 
-Plane - this is a class of some product
+Plane - this is a class of some product that should be constructed
 
 ```apex
 public with sharing class Plane {
