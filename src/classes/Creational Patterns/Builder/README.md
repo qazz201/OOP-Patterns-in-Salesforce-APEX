@@ -36,7 +36,7 @@ public with sharing class PlaneBuilder implements Builder {
     }
 
     public Plane getResult() {
-        return new Plane(planeName, engine, wheelsCount, wingType);
+        return new Plane(this);
     }
 }
 ```
@@ -53,11 +53,11 @@ public with sharing class Plane {
     private Integer seats = 300;
     private Boolean armor = false;
 
-    public Plane(String planeName, Engine engine, Integer wheelsCount, String wingType) {
-        this.planeName = planeName;
-        this.engine = engine;
-        this.wheelsCount = wheelsCount;
-        this.wingType = wingType;
+     public Plane(PlaneBuilder planeBuilder) {
+        this.planeName = planeBuilder.planeName;
+        this.engine = planeBuilder.engine;
+        this.wheelsCount = planeBuilder.wheelsCount;
+        this.wingType = planeBuilder.wingType;
     }
 
     public String getPlaneName(){

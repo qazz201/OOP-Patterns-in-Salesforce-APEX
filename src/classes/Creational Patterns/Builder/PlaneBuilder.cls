@@ -5,10 +5,12 @@
  */
 
 public with sharing class PlaneBuilder implements Builder {
-    private String planeName;
-    private Engine engine;
-    private Integer wheelsCount;
-    private String wingType;
+    public String planeName;
+    public Engine engine;
+    public Integer wheelsCount;
+    public String wingType;
+
+    public PlaneBuilder(){}
 
     public void setName(String name) {
         this.planeName = name;
@@ -27,6 +29,6 @@ public with sharing class PlaneBuilder implements Builder {
     }
 
     public Plane getResult() {
-        return new Plane(planeName, engine, wheelsCount, wingType);
+        return new Plane(this);
     }
 }

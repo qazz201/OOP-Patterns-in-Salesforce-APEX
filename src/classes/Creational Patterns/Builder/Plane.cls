@@ -12,42 +12,42 @@ public with sharing class Plane {
     private Integer seats = 300;
     private Boolean armor = false;
 
-    public Plane(String planeName, Engine engine, Integer wheelsCount, String wingType) {
-        this.planeName = planeName;
-        this.engine = engine;
-        this.wheelsCount = wheelsCount;
-        this.wingType = wingType;
+    public Plane(PlaneBuilder planeBuilder) {
+        this.planeName = planeBuilder.planeName;
+        this.engine = planeBuilder.engine;
+        this.wheelsCount = planeBuilder.wheelsCount;
+        this.wingType = planeBuilder.wingType;
     }
 
-    public String getPlaneName(){
+    public String getPlaneName() {
         return this.planeName;
     }
 
-    public Engine getEngine(){
+    public Engine getEngine() {
         return this.engine;
     }
 
-    public Integer getWheelCount(){
+    public Integer getWheelCount() {
         return this.wheelsCount;
     }
 
-    public String getWingType(){
+    public String getWingType() {
         return this.wingType;
     }
 
-    public Integer getSpeed(){
+    public Integer getSpeed() {
         return this.topSpeed;
     }
 
-    public Integer getSeats(){
+    public Integer getSeats() {
         return this.seats;
     }
 
-    public Boolean getArmor(){
+    public Boolean getArmor() {
         return this.armor;
     }
 
-  //////////////// Set /////////////////////////////////////////////////////////////////////////////////////////////////
+    //////////////// Set /////////////////////////////////////////////////////////////////////////////////////////////////
 
     public Plane setSpeed(Integer topSpeed) {
         this.topSpeed = topSpeed;
