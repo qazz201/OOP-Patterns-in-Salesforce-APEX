@@ -1,5 +1,6 @@
 /**
- * Created by vladyslavkravcuk on 26.11.2021.
+ * Created by Vlad K. on 26.11.2021.
+ * @description The main class that we want to add some additional  functionality
  */
 
 public with sharing class Printer implements IPrinter {

@@ -1,5 +1,6 @@
 /**
- * Created by vladyslavkravcuk on 26.11.2021.
+ * Created by Vlad K. on 26.11.2021.
+ * @description The base decorator
  */
 
 public abstract with sharing class MainDecorator implements IPrinter {
