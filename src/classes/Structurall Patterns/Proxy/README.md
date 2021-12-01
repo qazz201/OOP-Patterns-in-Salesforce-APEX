@@ -12,6 +12,8 @@ There are many uses for the proxy design pattern. Five of the more common types 
  + `Virtual Proxy`. A virtual proxy provides a simplified version of a complex object. Only when the detail of the object is required is the main object actually populated, providing a form of lazy initialisation. For example, a file management utility such as Windows Explorer may use an object for each file that is visible on the screen. When obtaining the file list, the file name, size and other easy-to-retrieve information would be held in proxy objects. Only when the "document preview" command is requested would the real object be created and populated with the full contents of the file, as these are slower to access and require more memory.
 
 
+### This is a `Virtual Proxy` realization
+
 Some service Interface
 
 ```apex
